@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+  background: white;
+}
+
+header {
+  align-items: center;
+}
+
+header h1 {
+  font-size: 40px;
+  color: black;
+}
+
+header a {
+    text-decoration: none;
+}
+
+nav a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+
+nav a:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: black;
+}
+
+.hero img {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
+.hero figcaption {
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Contenitore più largo per la pagina progetto */
+.project-page {
+  width: 90%;
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* Due immagini per riga più grandi */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 immagini per riga */
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.gallerypr {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px; /* più spazio tra le colonne e le righe */
+  padding: 40px;
+}
+
+.gallerypr figure {
+  margin-bottom: 20px;
+}
+
+.gallerypr img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  display: block;
+  transition: opacity 0.3s;
+}
+
+.gallerypr img:hover {
+  opacity: 0.5; /* immagine semitrasparente */
+  background-color: white; /* leggero velo bianco */
+}
+
+.gallerypr figcaption {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: black;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+}
+
+footer a {
+    color: black;
+    font-weight: bold;
+}
