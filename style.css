@@ -23,6 +23,7 @@ nav a {
   text-decoration: none;
   color: black;
   position: relative;
+  font-size: 20px;
 }
 
 nav a:hover::after {
@@ -44,6 +45,7 @@ nav a:hover::after {
 .hero figcaption {
     text-align: center;
     padding-top: 20px;
+    font-size: 20px;
 }
 
 /* Contenitore più largo per la pagina progetto */
@@ -67,13 +69,11 @@ nav a:hover::after {
   width: 100%;
   height: auto;
   display: block;
-  cursor: pointer;
-  transition: opacity 0.3s;
 }
 
 .gallerypr {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 30px; /* più spazio tra le colonne e le righe */
   padding: 40px;
 }
@@ -97,7 +97,7 @@ nav a:hover::after {
 
 .gallerypr figcaption {
   margin-top: 8px;
-  font-size: 0.9rem;
+  font-size: 20px;
   color: black;
 }
 
