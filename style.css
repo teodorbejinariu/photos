@@ -15,7 +15,11 @@ header h1 {
 }
 
 header a {
-    border: ;
+  text-decoration: none;
+}
+
+header nav a {
+  text-decoration: underline;
 }
 
 nav a {
@@ -80,6 +84,7 @@ nav a:hover::after {
 
 .gallerypr figure {
   margin-bottom: 20px;
+  top: 20px;
 }
 
 .gallerypr img {
